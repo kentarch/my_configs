@@ -8,39 +8,39 @@
 # ID 1
 rounded = 0
 border_width = 0
-background_color = #000000 76
-border_color = #1D1D1D 8
+background_color = #000000 0
+border_color = #1D1D1D 0
 
 # ID 2
-rounded = 4
-border_width = 1
-background_color = #36659C 100
-border_color = #5886BC 88
+rounded = 3
+border_width = 0
+background_color = #36659C 0
+border_color = #5886BC 0
 
 # ID 3
-rounded = 4
-border_width = 1
-background_color = #A06B4B 100
-border_color = #CD7E4E 91
+rounded = 3
+border_width = 0
+background_color = #A06B4B 0
+border_color = #CD7E4E 0
 
 # ID 4
 rounded = 7
 border_width = 1
-background_color = #000000 75
-border_color = #505050 35
+background_color = #000000 67
+border_color = #505050 27
 
 # ID 5
-rounded = 4
+rounded = 3
 border_width = 0
-background_color = #68973C 100
-border_color = #85D238 100
+background_color = #68973C 0
+border_color = #85D238 0
 
 # Panel
 panel_monitor = all
-panel_position = top left vertical
-panel_size = 100% 64
+panel_position = bottom center horizontal
+panel_size = 100% 38
 panel_margin = 0 0
-panel_padding = 6 6 2
+panel_padding = 10 4 20
 panel_dock = 0
 wm_menu = 0
 panel_layer = bottom
@@ -55,7 +55,7 @@ strut_policy = none
 
 # Taskbar
 taskbar_mode = single_desktop
-taskbar_padding = 0 0 6
+taskbar_padding = 0 0 25
 taskbar_background_id = 0
 #taskbar_active_background_id = 0
 
@@ -64,8 +64,8 @@ urgent_nb_of_blink = 7
 task_icon = 1
 task_text = 0
 task_centered = 0
-task_maximum_size = 52 50
-task_padding = 7 7
+task_maximum_size = 30 30
+task_padding = 0 0
 task_background_id = 5
 task_active_background_id = 2
 task_urgent_background_id = 4
@@ -87,10 +87,10 @@ font_shadow = 0
 
 # System Tray
 systray = 1
-systray_padding = 2 2 4
+systray_padding = 0 0 2
 systray_sort = ascending
 systray_background_id = 0
-systray_icon_size = 20
+systray_icon_size = 22
 systray_icon_asb = 100 0 0
 
 # Tooltips
