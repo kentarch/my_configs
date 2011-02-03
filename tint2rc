@@ -12,35 +12,41 @@ background_color = #000000 0
 border_color = #1D1D1D 0
 
 # ID 2
-rounded = 3
-border_width = 0
-background_color = #36659C 0
-border_color = #5886BC 0
+rounded = 0
+border_width = 1
+background_color = #EF5A29 39
+border_color = #FF906B 40
 
 # ID 3
-rounded = 3
-border_width = 0
-background_color = #A06B4B 0
-border_color = #CD7E4E 0
+rounded = 0
+border_width = 1
+background_color = #3C7CA6 60
+border_color = #6FC5FF 36
 
 # ID 4
 rounded = 7
 border_width = 1
-background_color = #000000 67
-border_color = #505050 27
+background_color = #000000 63
+border_color = #505050 23
 
 # ID 5
-rounded = 3
-border_width = 0
-background_color = #68973C 0
-border_color = #85D238 0
+rounded = 0
+border_width = 1
+background_color = #FFFFFF 6
+border_color = #FFFFFF 11
+
+# ID 6
+rounded = 0
+border_width = 1
+background_color = #000000 20
+border_color = #FFFFFF 5
 
 # Panel
 panel_monitor = all
 panel_position = bottom center horizontal
-panel_size = 100% 38
+panel_size = 100% 40
 panel_margin = 0 0
-panel_padding = 10 4 20
+panel_padding = 10 0 2
 panel_dock = 0
 wm_menu = 0
 panel_layer = bottom
@@ -55,7 +61,7 @@ strut_policy = none
 
 # Taskbar
 taskbar_mode = single_desktop
-taskbar_padding = 0 0 25
+taskbar_padding = 0 0 3
 taskbar_background_id = 0
 #taskbar_active_background_id = 0
 
@@ -64,12 +70,12 @@ urgent_nb_of_blink = 7
 task_icon = 1
 task_text = 0
 task_centered = 0
-task_maximum_size = 30 30
-task_padding = 0 0
+task_maximum_size = 60 40
+task_padding = 13 4
 task_background_id = 5
 task_active_background_id = 2
-task_urgent_background_id = 4
-task_iconified_background_id = 3
+task_urgent_background_id = 3
+task_iconified_background_id = 6
 
 # Task Icons
 task_icon_asb = 100 0 0
@@ -99,7 +105,7 @@ tooltip_padding = 10 10
 tooltip_show_timeout = 0.1
 tooltip_hide_timeout = 0.1
 tooltip_background_id = 4
-tooltip_font = snap 8
+tooltip_font = Zekton 9
 tooltip_font_color = #FFFFFF 60
 
 # Mouse
