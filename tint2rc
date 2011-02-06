@@ -12,34 +12,34 @@ background_color = #000000 0
 border_color = #1D1D1D 0
 
 # ID 2
-rounded = 0
+rounded = 1
 border_width = 1
-background_color = #EF5A29 39
+background_color = #EF5A29 37
 border_color = #FF906B 40
 
 # ID 3
-rounded = 0
+rounded = 1
 border_width = 1
 background_color = #3C7CA6 60
-border_color = #6FC5FF 36
+border_color = #6FC5FF 34
 
 # ID 4
 rounded = 7
 border_width = 1
-background_color = #000000 63
-border_color = #505050 23
+background_color = #000000 85
+border_color = #505050 21
 
 # ID 5
-rounded = 0
+rounded = 2
 border_width = 1
-background_color = #FFFFFF 6
-border_color = #FFFFFF 11
+background_color = #FFFFFF 9
+border_color = #FFFFFF 23
 
 # ID 6
 rounded = 0
 border_width = 1
 background_color = #000000 20
-border_color = #FFFFFF 5
+border_color = #FFFFFF 9
 
 # Panel
 panel_monitor = all
@@ -61,7 +61,7 @@ strut_policy = none
 
 # Taskbar
 taskbar_mode = single_desktop
-taskbar_padding = 0 0 3
+taskbar_padding = 0 0 2
 taskbar_background_id = 0
 #taskbar_active_background_id = 0
 
@@ -71,7 +71,7 @@ task_icon = 1
 task_text = 0
 task_centered = 0
 task_maximum_size = 60 40
-task_padding = 13 4
+task_padding = 12 3
 task_background_id = 5
 task_active_background_id = 2
 task_urgent_background_id = 3
