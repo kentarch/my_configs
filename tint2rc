@@ -12,41 +12,41 @@ background_color = #000000 0
 border_color = #1D1D1D 0
 
 # ID 2
-rounded = 1
+rounded = 0
 border_width = 1
-background_color = #EF5A29 37
-border_color = #FF906B 40
+background_color = #EF5A29 35
+border_color = #FF906B 35
 
 # ID 3
-rounded = 1
+rounded = 0
 border_width = 1
 background_color = #3C7CA6 60
-border_color = #6FC5FF 34
+border_color = #6FC5FF 32
 
 # ID 4
 rounded = 7
 border_width = 1
-background_color = #000000 85
-border_color = #505050 21
+background_color = #000000 83
+border_color = #505050 20
 
 # ID 5
-rounded = 2
+rounded = 1
 border_width = 1
-background_color = #FFFFFF 9
-border_color = #FFFFFF 23
+background_color = #FFFFFF 11
+border_color = #FFFFFF 19
 
 # ID 6
 rounded = 0
 border_width = 1
 background_color = #000000 20
-border_color = #FFFFFF 9
+border_color = #FFFFFF 8
 
 # Panel
 panel_monitor = all
-panel_position = bottom center horizontal
-panel_size = 100% 40
+panel_position = top right horizontal
+panel_size = 65% 24
 panel_margin = 0 0
-panel_padding = 10 0 2
+panel_padding = 1 0 1
 panel_dock = 0
 wm_menu = 0
 panel_layer = bottom
@@ -61,7 +61,7 @@ strut_policy = none
 
 # Taskbar
 taskbar_mode = single_desktop
-taskbar_padding = 0 0 2
+taskbar_padding = 0 0 1
 taskbar_background_id = 0
 #taskbar_active_background_id = 0
 
@@ -70,8 +70,8 @@ urgent_nb_of_blink = 7
 task_icon = 1
 task_text = 0
 task_centered = 0
-task_maximum_size = 60 40
-task_padding = 12 3
+task_maximum_size = 36 24
+task_padding = 7 2
 task_background_id = 5
 task_active_background_id = 2
 task_urgent_background_id = 3
@@ -93,15 +93,23 @@ font_shadow = 0
 
 # System Tray
 systray = 1
-systray_padding = 0 0 2
+systray_padding = 0 0 1
 systray_sort = ascending
 systray_background_id = 0
 systray_icon_size = 22
 systray_icon_asb = 100 0 0
 
+# Clock
+time1_format = %H:%M
+time1_font = Radio Space Bold, Bold 12
+clock_font_color = #DCDCDC 100
+clock_tooltip = %a %d %b %Y
+clock_padding = 2 0
+clock_background_id = 0
+
 # Tooltips
 tooltip = 1
-tooltip_padding = 10 10
+tooltip_padding = 7 7
 tooltip_show_timeout = 0.1
 tooltip_hide_timeout = 0.1
 tooltip_background_id = 4
