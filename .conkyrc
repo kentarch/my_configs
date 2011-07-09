@@ -10,11 +10,12 @@ double_buffer yes
 no_buffers yes
 text_buffer_size 2048
 
-gap_x 50
-gap_y 40
-minimum_size 150 336
-maximum_width 150
+gap_x 0
+gap_y 415
+minimum_size 120 385
+maximum_width 120
 own_window yes
+#own_window_argb_visual yes
 own_window_type desktop
 own_window_transparent yes
 own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
@@ -33,24 +34,26 @@ xftfont Ubuntu:size=8
 xftalpha 0.5
 uppercase no
 
-default_color FFFFFF
+default_color cccccc
 color1 00FFBB
 color2 FF8700
 color3 FF3939
 
 TEXT
 
-${image /home/dany/conky.png -p 0,0}
-${voffset -21}${goto 44}$sysname  $kernel
-${voffset 13}${goto 44}$uptime
-${voffset 13}${goto 44}I - ${cpu cpu0} %     II - ${cpu cpu1} %
-${voffset 13}${goto 44}$memperc %
-${voffset 13}${goto 44}${fs_used /} / ${fs_size /}
-${voffset 13}${goto 44}${fs_used /home} / ${fs_size /home}
-${voffset 13}${goto 44}${upspeed eth0}
-${voffset 13}${goto 44}${downspeed eth0}
-${voffset 13}${goto 44}${texeci 6000 perl ~/gmail.pl n} new messages
-${voffset 13}${goto 44}${texeci 6000 sh ~/ip.sh}
-${voffset 13}${goto 44}${texeci 6000 ~/newpm.sh} new packages
-${voffset 13}${goto 44}${battery_percent C1ED} %
-${voffset 13}${goto 44}${font Ubuntu:size=8}${color}${if_match ${hwmon 0 temp 1} >45}${color2}${if_match ${hwmon 0 temp 1} >55}${color3}${endif}${endif}${hwmon 0 temp 1}°C
+${image /home/dany/tint2.png -p 0,0}
+${voffset -15}${goto 14}$sysname  $kernel
+${voffset 13}${goto 14}up  $uptime
+${voffset 13}${goto 14}cpu1  ${cpu cpu0}%   cpu2  ${cpu cpu1}%
+${voffset 13}${goto 14}ram  $memperc %
+${voffset 13}${goto 14}root:
+${goto 14}${fs_used /} / ${fs_size /}
+${voffset 13}${goto 14}home:
+${goto 14}${fs_used /home} / ${fs_size /home}
+${voffset 13}${goto 14}upload  ${upspeed eth0}
+${voffset 13}${goto 14}download  ${downspeed eth0}
+${voffset 13}${goto 14}${texeci 6000 python2 ~/gmail.py} new messages
+${voffset 13}${goto 14}IP  ${texeci 6000 sh ~/ip.sh}
+${voffset 13}${goto 14}${texeci 6000 ~/newpm.sh} new packages
+${voffset 13}${goto 14}battery  ${battery_percent C1ED} %
+${voffset 13}${goto 14}temp  ${font Ubuntu:size=8}${color}${if_match ${hwmon 0 temp 1} >45}${color2}${if_match ${hwmon 0 temp 1} >55}${color3}${endif}${endif}${hwmon 0 temp 1}°C

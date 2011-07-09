@@ -6,41 +6,47 @@
 
 # Background definitions
 # ID 1
-rounded = 2
-border_width = 1
-background_color = #FFFFFF 24
-border_color = #FFFFFF 51
-
-# ID 2
-rounded = 3
-border_width = 1
-background_color = #36659C 24
-border_color = #FFFFFF 36
-
-# ID 3
-rounded = 3
-border_width = 1
-background_color = #A06B4B 0
-border_color = #FFFFFF 36
-
-# ID 4
-rounded = 3
+rounded = 1
 border_width = 1
 background_color = #000000 0
-border_color = #FFFFFF 36
+border_color = #000000 0
+
+# ID 2
+rounded = 0
+border_width = 1
+background_color = #0076FF 0
+border_color = #353535 0
+
+# ID 3
+rounded = 0
+border_width = 1
+background_color = #A06B4B 0
+border_color = #353535 0
+
+# ID 4
+rounded = 2
+border_width = 1
+background_color = #000000 55
+border_color = #484848 100
 
 # ID 5
-rounded = 3
+rounded = 0
 border_width = 1
-background_color = #FF0003 20
-border_color = #FFFFFF 36
+background_color = #FF0003 0
+border_color = #353535 0
+
+# ID 6
+rounded = 4
+border_width = 2
+background_color = #000000 60
+border_color = #000000 100
 
 # Panel
 panel_monitor = all
-panel_position = top center horizontal
-panel_size = 98% 36
-panel_margin = 0 -1
-panel_padding = 3 3 2
+panel_position = top right vertical
+panel_size = 50% 120
+panel_margin = 0 0
+panel_padding = 0 0 15
 panel_dock = 0
 wm_menu = 0
 panel_layer = bottom
@@ -48,23 +54,23 @@ panel_background_id = 1
 
 # Panel Autohide
 autohide = 0
-autohide_show_timeout = 0.0
-autohide_hide_timeout = 0.0
-autohide_height = 0
+autohide_show_timeout = 0.5
+autohide_hide_timeout = 1
+autohide_height = 2
 strut_policy = follow_size
 
 # Taskbar
 taskbar_mode = single_desktop
-taskbar_padding = 0 0 10
-taskbar_background_id = 0
+taskbar_padding = 0 0 0
+taskbar_background_id = 6
 #taskbar_active_background_id = 0
 
 # Tasks
 urgent_nb_of_blink = 7
-task_icon = 1
+task_icon = 0
 task_text = 1
 task_centered = 0
-task_maximum_size = 200 30
+task_maximum_size = 2000 26
 task_padding = 7 3
 task_background_id = 3
 task_active_background_id = 2
@@ -78,37 +84,37 @@ task_urgent_icon_asb = 50 0 0
 task_iconified_icon_asb = 100 0 0
 
 # Fonts
-task_font = Zekton 9
-task_font_color = #DEDEDE 100
-task_active_font_color = #E4E4E4 100
-task_urgent_font_color = #FFFFFF 100
-task_iconified_font_color = #DADADA 100
+task_font = Vibrocentric 11
+task_font_color = #E4E4E4 100
+task_active_font_color = #FF0000 56
+task_urgent_font_color = #0015FF 55
+task_iconified_font_color = #DEDEDE 55
 font_shadow = 0
 
 # System Tray
 systray = 1
-systray_padding = 2 2 4
+systray_padding = 0 0 4
 systray_sort = ascending
-systray_background_id = 0
+systray_background_id = 6
 systray_icon_size = 24
 systray_icon_asb = 100 0 0
 
 # Clock
 time1_format = %H:%M
 time1_font = DS-Digital 17
-clock_font_color = #FFFFFF 75
+clock_font_color = #FFFFFF 55
 clock_tooltip = %a %d %b
 clock_padding = 0 0
-clock_background_id = 0
+clock_background_id = 6
 
 # Tooltips
 tooltip = 1
-tooltip_padding = 5 5
+tooltip_padding = 4 3
 tooltip_show_timeout = 0.1
 tooltip_hide_timeout = 0.1
-tooltip_background_id = 4
+tooltip_background_id = 6
 tooltip_font = Zekton 9
-tooltip_font_color = #FFFFFF 75
+tooltip_font_color = #FFFFFF 68
 
 # Mouse
 mouse_middle = close
