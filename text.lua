@@ -68,30 +68,32 @@ function conky_draw_text()
 	--DEBUT DES PARAMETRES
 	--couleurs utilisées plusieurs fois placées dans des variables
 
-	local col0,col1,col2=0xFFFFCC,0xCCFF99,0x99FF00
+	local col0,col1,col2=0xFFFFCC,0xdddddd,0x99FF00
 	local colbg=0xffffff
     text_settings={
 
 		{
 			text=conky_parse("${time %H:%M}"),
-			font_name="GeosansLight",
-			font_size=70,
+			font_name="ITC Avant Garde Gothic Pro",
+			font_size=85,
+			bold=false,
 			h_align="l",
-			x=20,
+			x=0,
 			y=100,
 			orientation="nn",
 			reflection_alpha=0.3,
 			reflection_length=0.7,			
-			colour={{0,colbg,1}}
+			colour={{0,col1,1}}
 		},
 
 		{
-			text=conky_parse("CPU  ${cpu}%"),
+			text=conky_parse("CPU  ${cpu}%  ${hwmon 0 temp 1}°C"),
 			font_name="GeosansLight",
 			font_size=30,
+			bold=false,
 			h_align="l",
 			x=10,
-			y=400,
+			y=470,
 			orientation="nn",
 			reflection_alpha=0.3,
 			reflection_length=0.7,			
@@ -101,10 +103,11 @@ function conky_draw_text()
         {
 		    text=conky_parse('RAM  ${memperc}%'),
 			x=50,
-		    y=470,
+		    y=540,
 		    h_align="l",
 		    font_name="GeosansLight",
 		    font_size=30,
+			bold=false,
 			orientation="nn",
 			reflection_alpha=0.3,
 			reflection_length=0.7,			
@@ -112,25 +115,13 @@ function conky_draw_text()
         },  
         
         {
-		    text=conky_parse('DOWN  ${downspeed eth0}'),
-			x=10,
-		    y=550,
-    		    h_align="l",
-		    font_name="GeosansLight",
-		    font_size=30,
-			orientation="nn",
-			reflection_alpha=0.3,
-			reflection_length=0.7,			
-			colour={{0,colbg,1}}	
-        },  
-        
-        {
 		    text=conky_parse('UP  ${upspeed eth0}'),
 		    x=50,
-		    y=620,
+		    y=680,
     		    h_align="l",
 		    font_name="GeosansLight",
 		    font_size=30,
+			bold=false,
 			orientation="nn",
 			reflection_alpha=0.3,
 			reflection_length=0.7,			
@@ -138,12 +129,13 @@ function conky_draw_text()
         },         		
 
    	{
-    		text=conky_parse("TEMP  ${hwmon 0 temp 1}°C"),
+    		text=conky_parse('DOWN  ${downspeed eth0}'),
     		font_size=30,
     		font_name="GeosansLight",
+			bold=false,
     		h_align="l",
     		x=10,
-    		y=700,
+    		y=610,
 			orientation="nn",
 			reflection_alpha=0.3,
 			reflection_length=0.7,			
